@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calbg"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/tvBill"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etBill"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/tvTip"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/tvBill"
+        android:text="@string/btnMinus" />
+
+    <EditText
+        android:id="@+id/etTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnMinus"
+        android:layout_alignLeft="@+id/etShared"
+        android:layout_toLeftOf="@+id/btnMinus"
+        android:inputType="number"
+        android:ems="10"
+        android:text="@string/evTip" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etBill"
+        android:layout_alignBottom="@+id/btnMinus"
+        android:layout_marginLeft="45dp"
+        android:text="@string/btnPlus" />
+
+    <TextView
+        android:id="@+id/tvSharedby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnPlus"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/tvShareby"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSharedplus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSharedby"
+        android:layout_alignBottom="@+id/tvSharedby"
+        android:layout_alignLeft="@+id/btnPlus"
+        android:text="@string/sharedplus" />
+
+    <Button
+        android:id="@+id/btnSharedminus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSharedplus"
+        android:layout_alignBottom="@+id/btnSharedplus"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/sharedMinus" />
+
+    <EditText
+        android:id="@+id/etShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvSharedby"
+        android:layout_toLeftOf="@+id/btnSharedminus"
+        android:layout_toRightOf="@+id/btnSharedplus"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/sharedBy" />
+
+    <TextView
+        android:id="@+id/tvPerpersonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSharedplus"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/perPerson"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPerPersonTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvPerpersonLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/perpersonTip"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPerpersonLabel"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/totalLabel"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTotalLabel"
+        android:layout_alignRight="@+id/tvPerPersonTip"
+        android:layout_alignTop="@+id/tvTotalLabel"
+        android:text="@string/perpersonTip"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImprovedTipCalculator</string>
+    <string name="tvPercent">Percent:</string>
+    <string name="tvBill">Bill:</string>
+    <string name="tvTip">Tip %:</string>
+    <string name="btnPlus">+</string>
+    <string name="btnMinus">-</string>
+    <string name="tvShareby">Shared By:</string>
+    <string name="evTip">15</string>
+    <string name="sharedplus">+</string>
+    <string name="sharedMinus">-</string>
+    <string name="sharedBy">1</string>
+    <string name="perPerson">Per Person:</string>
+    <string name="perpersonTip">0</string>
+    <string name="totalLabel">Total:</string>
+
+</resources>
